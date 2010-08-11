@@ -29,10 +29,10 @@ Available Methods
 Where `query` is a string (usually something like the artist name, or the name+song title):
 
 * request_link(query) -- Returns a (string) link to the song
-* request_details(query) -- Returns a Song() object with the song data
+* request_metadata(query) -- Returns a Song() object with the song data
 * search(query) -- Returns a list of Song() objects with data on various songs
 
 License
 -------
 
-pytinysong is licensed under the WTFPL. 
+pytinysong is licensed under the WTFPL
