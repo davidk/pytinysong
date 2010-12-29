@@ -19,7 +19,7 @@ def test_request_link():
 def test_request_metadata():
     song = TinySongRequest()
     result = song.request_metadata('FC Kahuna - Hayling')
-    eq_(result.Url,'http://tinysong.com/mTqQ')
+    eq_(result.url,'http://tinysong.com/mTqQ')
 
 def test_request_search():
     song = TinySongRequest()
