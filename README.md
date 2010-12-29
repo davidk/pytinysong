@@ -6,7 +6,7 @@ A Python interface to the Tinysong (Grooveshark backed) service:
     >>> from pytinysong.request import TinySongRequest
     >>> song = TinySongRequest()
     >>> results = song.search('Overseer - Supermoves')
-    >>> or song in results:
+    >>> for song in results:
     ...     print song.artist_name, '-', song.song_name
     ... 
     Overseer - Supermoves
