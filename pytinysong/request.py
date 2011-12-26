@@ -16,8 +16,8 @@ class TinySongRequest(object):
                          'AlbumName': 'album_name',
     }
 
-    def __init__(self, debug=False):
-        self.tinysong = TinySongConnector(debug=debug)
+    def __init__(self, api_key=False, debug=False):
+        self.tinysong = TinySongConnector(api_key=api_key, debug=debug)
 
     def __map_api_methods(self, results):
         # Older methods are kept mapped for backwards compatibility
