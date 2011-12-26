@@ -4,13 +4,17 @@ pytinysong
 A Python interface to the Tinysong (Grooveshark backed) service:
 
     >>> from pytinysong.request import TinySongRequest
-    >>> song = TinySongRequest()
+    >>> song = TinySongRequest(api_key=z1cx2j1mgk19jm3j)
     >>> results = song.search('Overseer - Supermoves')
     >>> for song in results:
     ...     print song.artist_name, '-', song.song_name
     ... 
     Overseer - Supermoves
     Overseer - Supermoves [Animatrix Remix]
+
+About the API key
+-----------------
+TinySong now requires an API key. Registration is available by visiting the [TinySong](http://www.tinysong.com/api) website.
 
 Song() object properties
 ------------------------
