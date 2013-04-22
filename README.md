@@ -1,6 +1,8 @@
 pytinysong
 ==========
 
+[![Build Status](https://travis-ci.org/davidk/pytinysong.png?branch=master)](https://travis-ci.org/davidk/pytinysong)
+
 A Python interface to the Tinysong (Grooveshark backed) service:
 
     >>> from pytinysong.request import TinySongRequest
