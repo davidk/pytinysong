@@ -51,4 +51,5 @@ Where `query` is a string (usually something like the artist name, or the name+s
 License
 -------
 
-`pytinysong` is licensed under the WTFPL. Using it for world domination is allowed.
+CC0 Public Domain.
+Using it for world domination is (still) allowed. More information [here](http://creativecommons.org/publicdomain/zero/1.0/).
