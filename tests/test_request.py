@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 ''' Nose tests for the request code portions
 
 '''
