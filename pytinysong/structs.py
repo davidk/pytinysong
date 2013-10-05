@@ -17,5 +17,5 @@ class Song(object):
     AlbumName = None
 
     def __init__(self, data):
-        for name, value in data.iteritems():
+        for name, value in list(data.items()):
             setattr(self, name, value)
