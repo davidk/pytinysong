@@ -3,8 +3,8 @@
 
 '''
 
-from connection import TinySongConnector
-from structs import Song
+from .connection import TinySongConnector
+from .structs import Song
 
 class TinySongRequest(object):
     tinysong_api_map = { 'Url': 'url',
