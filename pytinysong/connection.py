@@ -68,8 +68,8 @@ class TinySongConnector(object):
         
         result.close()
 
-        if self.debug:
-            print data,api_data
+        if 'error' in api_data:
+            raise TinySongAPIError("An error occured at the TinySong endpoint: %s" % (api_data['error']))
 
         return api_data
 
