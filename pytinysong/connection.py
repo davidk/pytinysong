@@ -61,7 +61,7 @@ class TinySongConnector(object):
         if result.status != 200:
             raise TinySongAPIError("An error occured at the Tinysong endpoint: %s" % (result.read()))
 
-        data = result.read() 
+        data = result.read().decode('utf-8')
 
         api_data = []
         api_data = json.loads(data) 
