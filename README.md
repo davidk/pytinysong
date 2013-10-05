@@ -6,10 +6,10 @@ pytinysong
 A Python interface to the Tinysong (Grooveshark backed) service:
 
     >>> from pytinysong.request import TinySongRequest
-    >>> song = TinySongRequest(api_key=z1cx2j1mgk19jm3j)
+    >>> song = TinySongRequest(api_key='z1cx2j1mgk19jm3j')
     >>> results = song.search('Overseer - Supermoves')
     >>> for song in results:
-    ...     print song.artist_name, '-', song.song_name
+    ...     print(song.artist_name, '-', song.song_name)
     ... 
     Overseer - Supermoves
     Overseer - Supermoves [Animatrix Remix]
