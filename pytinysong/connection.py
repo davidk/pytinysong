@@ -59,7 +59,7 @@ class TinySongConnector(object):
         query.request(request_type, path, None, self.tinysong_headers)
         result = query.getresponse()
         if result.status != 200:
-            raise TinySongAPIError("An error occured at the Tinysong endpoint: " % (result.read()))
+            raise TinySongAPIError("An error occured at the Tinysong endpoint: %s" % (result.read()))
 
         data = result.read() 
 
