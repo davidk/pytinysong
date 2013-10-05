@@ -2,7 +2,7 @@
 from distutils.core import setup
 setup(
         name="pytinysong",
-        version="0.01",
+        version="0.02",
         description="Python interface to the Tinysong API",
         author="davidk",
         author_email="kdavid@gmail.com",
