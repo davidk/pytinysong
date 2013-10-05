@@ -1,6 +1,13 @@
 import sys
-import httplib
-import urllib
+
+# for Python2 <-> Python3 interop
+try:
+    import http.client as httpclient
+    import urllib.parse as urlparse
+    from urllib.request import urlopen
+except ImportError:
+    import httplib as httpclient
+    import urllib as urlparse
 
 try:
     import simplejson as json
