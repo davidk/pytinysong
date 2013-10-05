@@ -1,9 +1,8 @@
-#!/usr/bin/env python
 ''' Nose tests for the connection code portions
 
 '''
 
-from pytinysong.connection import TinySongConnector, TinySongConnectorError
+from pytinysong.connection import TinySongConnector, TinySongConnectorError, TinySongAPIError
 from pytinysong.request import TinySongRequest
 from nose.tools import raises, ok_
 from private_data import KEY
@@ -31,3 +30,8 @@ def test_request_search():
     song = TinySongRequest(api_key=KEY)
     results = song.search('Overseer')
     ok_(len(results) > 0)
+
+@raises(TinySongAPIError)
+def test_bad_api_key():
+    song = TinySongRequest(api_key='bad_api_key_test')
+    results = song.search('Wanda Sa')
