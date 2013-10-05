@@ -47,15 +47,15 @@ class TinySongConnector(object):
 
     def build_api_path(self,query_type,query):
         if not query_type in self.tinysong_methods:
-            raise TinySongConnectorError("Query type is not supported by the API. Possible options are: %s" % (self.tinysong_methods.keys()))
+            raise TinySongConnectorError("Query type is not supported by the API. Possible options are: %s" % (list(self.tinysong_methods.keys())))
 
         tinysong_query = self.tinysong_methods[query_type]
-        processed_query = urllib.quote_plus(query)
+        processed_query = urlparse.quote_plus(query)
 
         return "%s%s?format=%s&key=%s" % (tinysong_query,processed_query,self.tinysong_api_type,self.tinysong_api_key)
     
     def request(self, request_type, path):
-        query = httplib.HTTPConnection(self.tinysong_url)
+        query = httpclient.HTTPConnection(self.tinysong_url)
         query.request(request_type, path, None, self.tinysong_headers)
         result = query.getresponse()
         if result.status != 200:
