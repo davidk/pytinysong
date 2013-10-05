@@ -16,7 +16,7 @@ except ImportError:
 
 TINYSONG_URL= 'tinysong.com'
 TINYSONG_API_TYPE = 'json'
-TINYSONG_HEADERS = {'Accept': ['text/plain', 'application/json', 'text/html'], 
+TINYSONG_HEADERS = {'Accept': 'application/json', 
                     'User-Agent':'pytinysong' }
 
 class TinySongAPIError(Exception):
