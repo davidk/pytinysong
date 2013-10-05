@@ -21,7 +21,7 @@ class TinySongRequest(object):
 
     def __map_api_methods(self, results):
         # Older methods are kept mapped for backwards compatibility
-        for key,data in results.items():
+        for key,data in list(results.items()):
             results[self.tinysong_api_map[key]] = data 
         return results
 
