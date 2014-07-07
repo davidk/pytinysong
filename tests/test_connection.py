@@ -16,7 +16,7 @@ def test_make_api_path_fail():
 
 def test_request_link():
     song = TinySongRequest(api_key=KEY)
-    results = song.request_link('Samantha James - Maybe Tomorrow')
+    results = song.request_link('Beethoven - Moonlight Sonata')
     ok_(len(results) > 0)
 
 
