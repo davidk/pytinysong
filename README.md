@@ -1,7 +1,7 @@
 pytinysong
 ==========
 
-[![Build Status](https://travis-ci.org/davidk/pytinysong.png?branch=master)](https://travis-ci.org/davidk/pytinysong)
+2015/05/01: Grooveshark has shut down. This means pytinysong is no longer useful, since Tinysong was backed by Grooveshark. It's been a good run.
 
 A Python interface to the Tinysong (Grooveshark backed) service:
 
